@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/tt-chocolates');
+
+body {
+    font-family: 'TT Chocolates';
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-ls {
+    font-family: "League Spartan", sans-serif;
+}
+
+.family {
+    -webkit-text-stroke: 5px black;
+    -webkit-text-fill-color: #f47521;
+}
+
+table {
+    tr {
+
+        th,
+        td {
+            border: 1.5px solid #434343;
+
+            &:nth-child(3) {
+                background-color: #FF924A;
+                color: #000000;
+            }
+        }
+    }
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .family {
+        -webkit-text-stroke: 2px black;
+    }
+}
+
+
+
+/* CSS styles for the hamburger icon */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation-menu ul {
+        display: none;
+    }
+
+    .navigation-menu ul.active {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
